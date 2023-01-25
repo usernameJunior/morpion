@@ -363,10 +363,6 @@
         xhttp.send('stat=' + String(stat));
       }
     </script>
-
-    <!-- Ce tag de commentaire non fermé sert à contourner les bannières de commentaire ajoutées par l'hébergeur.
-    La plupart des navigateurs ferment automatiquement les balises "oubliées" et ne seront pas gênés -->
-<!--
+  <!--
   </body>
-
 </html>
