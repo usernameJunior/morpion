@@ -1,0 +1,81 @@
+
+
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* STYLE */
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+  margin: 0.5em auto;
+  text-align: center;
+}
+h3#verdict {
+  color: navy;
+}
+
+table {
+  background-color: gray;
+  margin: 1em auto 2em auto;
+  text-align: center;
+  border-spacing: 5px;
+  border-radius: 5px;
+  padding: 0;
+}
+  td {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+  }
+  img {
+    display: block;
+  }
+
+#btnRecommencer {
+  display: block;
+  margin: 0 auto 2em auto;
+  padding: 0 1em;
+  border-radius: 5px;
+}
+
+.clignote {
+  animation-name: clignote;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/*  */
+
+@keyframes clignote {
+  0%  { opacity:1; }
+  50% { opacity:0.5; }
+  100% { opacity: 1}
+}
+
+@media screen and (max-width: 768px) {
+  #btnRecommencer {
+    display: block;
+    padding: 1em 2em;
+  }
+  h1, h2, h3 {
+    border-bottom: 2px solid gray;
+    margin: 0;
+    padding: 0.5em 0;
+  }
+  h3#verdict {
+    border: none;
+  }
+}
